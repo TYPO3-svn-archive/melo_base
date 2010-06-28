@@ -1,0 +1,40 @@
+.tx-indexedsearch-searchbox fieldset{width:390px;}
+#indexedsearchbox {float:left;position:relative;margin:0.5em 1em;}
+.searchbox-sword{
+	border: 1px solid #999;
+	height: 16px;
+	padding-right:20px;
+	padding-left:5px;
+	display:block;
+	float:left;
+	clear:both;
+	color:#1e1e1e !important;
+}
+.searchbox-sword{ width: 175px; }
+.tx-indexedsearch .tx-indexedsearch-searchbox input.tx-indexedsearch-searchbox-sword { width:23em; }
+
+.searchbutton{
+	border:none;
+	border-right: 1px solid #999;
+	right:0px;
+	margin-left:1px;
+	padding:4px 3px 4px 3px;
+	position:absolute;
+	top:1px;
+	height:18px;
+	width:20px;
+	text-indent:-9999em;
+	background:#fff url('../../img/lupe.gif') no-repeat left 50%;
+}
+
+
+.tx-indexedsearch .result-count-tmpl-css, 
+.tx-indexedsearch .percent-tmpl-css {
+	margin:0;
+}
+
+.tx-indexedsearch .tx-indexedsearch-res .tx-indexedsearch-descr .tx-indexedsearch-redMarkup { color:#3C3C3B;}
+
+.tx-indexedsearch .searchbox-tmpl-css label{
+	width:8em;
+}

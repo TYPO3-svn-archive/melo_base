@@ -1,0 +1,118 @@
+
+/*
+ * Note: Include the nivo-slider.css file that comes
+ * with the main download before including this file.
+ */
+
+.rgslideshowce img {
+	position:absolute;
+	top:0px;
+	left:0px;
+}
+/*
+ * jQuery Nivo Slider v1.8
+ * http://nivo.dev7studios.com
+ *
+ * Copyright 2010, Gilbert Pellegrom
+ * Free to use and abuse under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ * 
+ * March 2010
+ */
+ 
+ 
+/* The Nivo Slider styles */
+.nivoSlider {
+	position:relative;
+}
+.nivoSlider img {
+	position:absolute;
+	top:0px;
+	left:0px;
+}
+/* If an image is wrapped in a link */
+.nivoSlider a.nivo-imageLink {
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	border:0;
+	padding:0;
+	margin:0;
+	z-index:60;
+	display:none;
+}
+/* The slices in the Slider */
+.nivo-slice {
+	display:block;
+	position:absolute;
+	z-index:50;
+	height:100%;
+}
+/* Caption styles */
+.nivo-caption {
+	position:absolute;
+	left:0px;
+	bottom:0px;
+	background:#000;
+	color:#fff;
+	opacity:0.8; /* Overridden by captionOpacity setting */
+	width:100%;
+	z-index:89;
+}
+.nivo-caption p {
+	padding:5px;
+	margin:0;
+}
+/* Direction nav styles (e.g. Next & Prev) */
+.nivo-directionNav a {
+	position:absolute;
+	top:45%;
+	z-index:99;
+	cursor:pointer;
+}
+.nivo-prevNav {
+	left:0px;
+}
+.nivo-nextNav {
+	right:0px;
+}
+/* Control nav styles (e.g. 1,2,3...) */
+.nivo-controlNav a {
+	position:relative;
+	z-index:99;
+	cursor:pointer;
+}
+.nivo-controlNav a.active {
+	font-weight:bold;
+}
+
+.nivo-controlNav{ 
+    /*
+    top:5px;
+    left:50%;
+    margin-left:-225px;
+    position:absolute;
+    width:450px;
+    */
+    text-align:center;
+    width:100%;
+    height:15px;
+    padding:5px 0;
+}
+.nivo-controlNav a.nivo-control{
+    text-indent:-9999em;
+    height:10px;
+    width:10px;
+    display:inline-block;
+    border:1px solid #ddd;
+    margin-left:3px;
+    background:url('../../img/10x10.gif');
+    filter: alpha(opacity=50); /* internet explorer */
+    -khtml-opacity: 0.50;      /* khtml, old safari */
+    -moz-opacity: 0.50;       /* mozilla, netscape */
+    opacity: 0.50;           /* fx, safari, opera */
+}
+div.csc-textpic-center div.rgslideshowce  {margin-bottom:30px;}
+.nivo-controlNav a.active{background:#ddd;}

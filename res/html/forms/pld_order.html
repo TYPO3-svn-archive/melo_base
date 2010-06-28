@@ -1,0 +1,293 @@
+<!-- ###TEMPLATE_FORM1### begin -->
+
+<!-- ###FORM_STARTBLOCK### begin -->
+###ERROR###
+<div class="preorder_issue formstyle">
+<form method="post" action="###REL_URL###" enctype="multipart/form-data">
+	<input type="hidden" name="order[submitted]" value="1" />
+<!-- ###FORM_STARTBLOCK### end -->
+	<div class="dl">
+		<div class="feature">
+			<h3>###LLL:order_preorder###</h3>
+			###LLL:order_preorder_description###
+			###issue###
+			<button type="submit" name="order[order]" id="order_preorder" value="preorder"/>Preorder</button>
+		</div>
+		<div class="clear"></div>
+		<div class="feature">
+			<h3>###LLL:order_test###</h3>
+			###LLL:order_test_description###
+			###issue###
+			<button type="submit" name="order[order]" id="order_test" value="test"/>Test</button>
+		</div>
+	</div>
+	
+	<div class="feature" style="height:509px;">
+		<h3>###LLL:order_subscribe###</h3>
+		###LLL:order_subscribe_description###
+		###issues###
+		<button type="submit" name="order[order]" id="order_subscribe" value="subscribe"/>Subscribe</button>
+	</div>
+	
+	<div class="clear"></div>
+	<input type="hidden" value="###LLL:next###" ###submit_nextStep###/>
+<!-- ###FORM_ENDBLOCK### begin -->
+</form>
+</div>
+<!-- ###FORM_ENDBLOCK### end -->
+<!-- ###TEMPLATE_FORM1### end -->
+
+<!-- ###TEMPLATE_FORM2_preorder### begin -->
+<h1>###LLL:order_preorder###</h1>
+###FORM_STARTBLOCK###
+	<fieldset>
+		<div class="row">
+			<p>###LLL:required_fields###</p>
+		</div>
+		<div class="clear"></div>
+		<fieldset class="dl25 mr1 condensed">
+			<legend>###LLL:invoice_address###</legend>
+			###field_input_company### <br />
+			###field_input_firstname### <br />
+			###field_input_lastname### <br />
+			###field_input_street### <br />
+			###field_input_city### <br />
+			###field_input_zip### <br />
+			###field_selectcountries_country### <br />
+		</fieldset>
+		<fieldset class="dl25 condensed">
+			<legend>###LLL:delivery_address###</legend>
+			###field_input_delivery_company### <br />
+			###field_input_delivery_firstname### <br />
+			###field_input_delivery_lastname### <br />
+			###field_input_delivery_street### <br />
+			###field_input_delivery_city### <br />
+			###field_input_delivery_zip### <br />
+			###field_selectcountries_delivery_country### <br />
+		</fieldset>
+		
+		<fieldset class="dl25 mr1 condensed">
+			<legend>###LLL:payment_details###</legend>
+			###field_selectcard_card_type### <br />
+			###field_input_card_owner### <br />
+			###field_input_card_number### <br />
+			###field_input_card_valid### <br />
+		</fieldset>
+		
+		<fieldset class="dl25 condensed">
+			<legend>###LLL:contact_information###</legend>
+			###field_input_phone###
+			###field_input_fax###
+			###field_input_email###
+		</fieldset>
+		<div class="clear"></div>
+
+		<fieldset class="dl25 mr1 condensed">
+			<legend>###LLL:options###</legend>
+			###field_language_edition### <br />
+		</fieldset>
+		
+		<div class="clear"></div>
+		<fieldset class="dl">
+			###field_checkbox_agree_terms###
+			###field_checkbox_agree_payment###
+			###field_checkbox_agree_newsletter###
+		</fieldset>
+		
+		<div class="clear"></div>
+		<div class="dl">
+			<button type="submit" value="###LLL:prev###" ###submit_prevStep### />###LLL:prev###</button>
+		</div>
+		<div class="dr">
+			<button type="submit" value="###LLL:next###" ###submit_nextStep### />###LLL:next###</button>
+		</div>
+	</fieldset>
+###FORM_ENDBLOCK###
+<!-- ###TEMPLATE_FORM2_preorder### end -->
+
+<!-- ###TEMPLATE_FORM2_test### begin -->
+<h1>###LLL:order_test###</h1>
+###FORM_STARTBLOCK###
+	<fieldset>
+		<div class="row">
+			<p>###LLL:required_fields###</p>
+		</div>
+		<div class="clear"></div>
+		<fieldset class="dl25 mr1 condensed">
+			<legend>###LLL:invoice_address###</legend>
+			###field_input_company### <br />
+			###field_input_firstname### <br />
+			###field_input_lastname### <br />
+			###field_input_street### <br />
+			###field_input_city### <br />
+			###field_input_zip### <br />
+			###field_selectcountries_country### <br />
+		</fieldset>
+		
+		<fieldset class="dl25 condensed">
+			<legend>###LLL:contact_information###</legend>
+			###field_input_phone###
+			###field_input_fax###
+			###field_input_email###
+		</fieldset>
+
+		<div class="clear"></div>
+		<fieldset class="dl">
+			###field_checkbox_agree_terms###
+		</fieldset>
+		
+		<div class="clear"></div>
+		<div class="dl">
+			<button type="submit" value="###LLL:prev###" ###submit_prevStep### />###LLL:prev###</button>
+		</div>
+		<div class="dr">
+			<button type="submit" value="###LLL:next###" ###submit_nextStep### />###LLL:next###</button>
+		</div>
+	</fieldset>
+###FORM_ENDBLOCK###
+<!-- ###TEMPLATE_FORM2_test### end -->
+
+<!-- ###TEMPLATE_FORM2### begin -->
+<h1>###LLL:order_subscribe###</h1>
+###FORM_STARTBLOCK###
+	<fieldset>
+		<div class="row">
+			<p>###LLL:required_fields###</p>
+		</div>
+		<div class="clear"></div>
+		<fieldset class="dl25 mr1 condensed">
+			<legend>###LLL:invoice_address###</legend>
+			###field_input_company### <br />
+			###field_input_firstname### <br />
+			###field_input_lastname### <br />
+			###field_input_street### <br />
+			###field_input_city### <br />
+			###field_input_zip### <br />
+			###field_selectcountries_country### <br />
+		</fieldset>
+		<fieldset class="dl25 condensed">
+			<legend>###LLL:delivery_address###</legend>
+			###field_input_delivery_company### <br />
+			###field_input_delivery_firstname### <br />
+			###field_input_delivery_lastname### <br />
+			###field_input_delivery_street### <br />
+			###field_input_delivery_city### <br />
+			###field_input_delivery_zip### <br />
+			###field_selectcountries_delivery_country### <br />
+		</fieldset>
+		
+		<fieldset class="dl25 mr1 condensed">
+			<legend>###LLL:payment_details###</legend>
+			###field_selectcard_card_type### <br />
+			###field_input_card_owner### <br />
+			###field_input_card_number### <br />
+			###field_input_card_valid### <br />
+		</fieldset>
+		
+		<fieldset class="dl25 condensed">
+			<legend>###LLL:contact_information###</legend>
+			###field_input_phone###
+			###field_input_fax###
+			###field_input_email###
+		</fieldset>
+		<div class="clear"></div>
+		
+		<fieldset class="dl25 mr1 condensed">
+			<legend>###LLL:options###</legend>
+			###field_issue_first_issue### <br />
+		</fieldset>
+		
+		<fieldset class="dl25 condensed">
+			<legend>&nbsp;</legend>
+			###field_language_edition### <br />
+		</fieldset>
+		
+		<div class="clear"></div>
+		<fieldset class="dl">
+			###field_checkbox_agree_terms###
+			###field_checkbox_agree_payment###
+			###field_checkbox_agree_newsletter###
+		</fieldset>
+		
+		<div class="clear"></div>
+		<div class="dl">
+			<button type="submit" value="###LLL:prev###" ###submit_prevStep### />###LLL:prev###</button>
+		</div>
+		<div class="dr">
+			<button type="submit" value="###LLL:next###" ###submit_nextStep### />###LLL:next###</button>
+		</div>
+	</fieldset>
+###FORM_ENDBLOCK###
+<!-- ###TEMPLATE_FORM2### end -->
+
+<!-- ###TEMPLATE_EMAIL_USER_PLAIN### begin -->
+Hello ###value_firstname### ###value_lastname###,
+
+you have just filled out the form.
+
+Thanks for your request, we will answer asap.
+
+Typoheads
+
+<!-- ###TEMPLATE_EMAIL_USER_PLAIN### end -->
+
+<!-- ###TEMPLATE_EMAIL_USER_HTML### begin -->
+<p>
+Hello ###value_firstname### ###value_lastname###,
+</p>
+<p>
+you have just filled out the form.
+</p>
+<p>
+Thanks for your request, we will answer asap.
+</p>
+Typoheads
+
+<!-- ###TEMPLATE_EMAIL_USER_HTML### end -->
+
+<!-- ###TEMPLATE_EMAIL_ADMIN_PLAIN### begin -->
+Hello Admin,
+
+a user has just filled out the form.
+
+<!-- ###TEMPLATE_EMAIL_ADMIN_PLAIN### end -->
+
+<!-- ###TEMPLATE_EMAIL_ADMIN_HTML### begin -->
+Hello Admin (HTML),
+
+a user has just filled out the form.
+
+<!-- ###TEMPLATE_EMAIL_ADMIN_HTML### end -->
+
+<!-- ###TEMPLATE_SUBMITTEDOK### begin -->
+
+<table>
+  <tr>
+    <td>###LLL:firstname###</td>
+    <td>###value_firstname###</td>
+  </tr>
+
+  <tr>
+    <td>###LLL:lastname###</td>
+    <td>###value_lastname###</td>
+  </tr>
+  
+  <tr>
+    <td>###LLL:email###</td>
+    <td>###value_email###</td>
+  </tr>
+  
+  <tr>
+    <td>###LLL:interests###</td>
+    <td>###value_interests###</td>
+  </tr>
+  
+  <tr>
+    <td>###LLL:contact_via###</td>
+    <td>###value_contact_via###</td>
+  </tr>
+</table>
+<div>
+###PRINT_LINK### / ###PDF_LINK### / ###CSV_LINK###
+</div>
+<!-- ###TEMPLATE_SUBMITTEDOK### end -->

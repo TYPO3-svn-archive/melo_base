@@ -1,0 +1,51 @@
+/*
+.contain{ display:inline-block; width:100%; }
+* html .contain{ height:1%; width:auto; }
+.contain{ display:table; }
+*/
+
+/* \*/
+* html .contain { height: 1%; }
+/* */
+.contain{ overflow:hidden; min-width:0; }
+
+
+/* Borrowed from YAML 
+.equal{ overflow:visible; display:table; table-layout:fixed; }
+
+.equal > div {
+  display:table-cell;
+  float:none; 
+  margin:0; 
+  overflow:hidden;
+  vertical-align:top;
+}
+
+.equal > div.clear{
+    display:table-row;
+    float:left;
+    width:100%;
+    background:red;
+}
+*/
+
+
+.ml1{margin-left:1em;}
+.ml2{margin-left:2em;}
+.ml3{margin-left:3em;}
+.ml4{margin-left:4em;}
+
+.mr1{margin-right:1em;}
+.mr2{margin-right:2em;}
+.mr3{margin-right:3em;}
+.mr4{margin-right:4em;}
+
+.mt1{margin-top:1em;}
+.mt2{margin-top:2em;}
+.mt3{margin-top:3em;}
+.mt4{margin-top:4em;}
+
+.mb1{margin-bottom:1em;}
+.mb2{margin-bottom:2em;}
+.mb3{margin-bottom:3em;}
+.mb4{margin-bottom:4em;}

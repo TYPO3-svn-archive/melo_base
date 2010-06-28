@@ -1,0 +1,2 @@
+# cat=basic/trim; type=integer; label=Number of Chars to Display in the Pagemodule as Preview for Content Elements
+trim = 200

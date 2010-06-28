@@ -1,0 +1,11 @@
+.tx-comments-comment-form { }
+    .tx-comments-comment-form .row { position:relative; }
+    .tx-comments-required-mark  { position:absolute; right:-10px; top:5px; }
+    .info .tx-comments-required-mark  { position:static; }
+.tx-comments-comments {  }
+    .tx-comments-comments .tx-comments-comment-1,
+    .tx-comments-comments .tx-comments-comment-2 { border:none; border-bottom:1px solid #bbb; padding:0 5px 5px; }
+    .tx-comments-comment { position:relative; }
+        .tx-comments-comment .tx-comments-comment-date { font-weight:normal; color:#aaa;display:block;}
+        .tx-comments-comment .tx-comments-comment-name { width:12%; }
+        .tx-comments-comment .tx-comments-comment-content { width:88%; }

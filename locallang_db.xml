@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+    <meta type="array">
+        <type>database</type>
+        <description>Language labels for database tables/fields belonging to extension 'stub'</description>
+    </meta>
+    <data type="array">
+        <languageKey index="default" type="array">
+            <label index="pages.tx_melobase_newsfolder">News Folder</label>
+            <label index="pages.tx_melobase_newsdetail">News Detail</label>
+            <label index="pages.tx_melobase_home">Home Page</label>
+            <label index="pages.tx_melobase_servicefolder">Service Folder</label>
+            <label index="pages.tx_melobase_footerfolder">Footer Folder</label>
+            <label index="pages.tx_melobase_devpage">Development Page</label>
+            <label index="pages.tx_melobase_searchpage">Search Page</label>
+            <label index="pages.tx_melobase_404">404 Page</label>
+        </languageKey>
+    </data>
+</T3locallang>

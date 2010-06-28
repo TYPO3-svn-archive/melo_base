@@ -1,0 +1,82 @@
+<!-- ###TEMPLATE_FORM1### begin -->
+<div class="simple_contact formstyle">
+<form method="post" action="###REL_URL###" enctype="multipart/form-data">
+	<fieldset>
+		<input type="hidden" name="###prefix###[submitted]" value="1" />
+		<div class="left">
+			<div class="row">
+				###field_input_firstname###
+			</div>
+			<div class="row">
+				###field_input_lastname###
+			</div>
+			<div class="row">
+				###field_input_email###
+			</div>
+		</div>
+		<div class="right">
+			###field_text_message###
+		</div>
+		<div class="clear"></div>
+		<div class="dl20 info">
+			###LLL:required_fields###
+		</div>
+		<div class="dr">
+			<input type="submit" class="submit" value="###LLL:submit###" ###submit_nextStep###/>
+		</div>
+	</fieldset>
+</form>
+</div>
+<!-- ###TEMPLATE_FORM1### end -->
+
+<!-- ###TEMPLATE_EMAIL_USER_PLAIN### begin -->
+Hello ###value_firstname### ###value_lastname###,
+
+you have just filled out the form.
+
+Thanks for your request, we will answer asap.
+
+Typoheads
+
+<!-- ###TEMPLATE_EMAIL_USER_PLAIN### end -->
+
+<!-- ###TEMPLATE_EMAIL_USER_HTML### begin -->
+
+Hello ###value_firstname### ###value_lastname###,
+
+you have just filled out the form.
+
+Thanks for your request, we will answer asap.
+
+Typoheads
+
+<!-- ###TEMPLATE_EMAIL_USER_HTML### end -->
+
+<!-- ###TEMPLATE_EMAIL_ADMIN_PLAIN### begin -->
+Firstname:		###value_firstname###
+Lastname:		###value_lastname###
+E-Mail:			###value_email###
+Message:
+	###value_message###
+<!-- ###TEMPLATE_EMAIL_ADMIN_PLAIN### end -->
+
+<!-- ###TEMPLATE_EMAIL_ADMIN_HTML### begin -->
+<table>
+	<tr>
+		<th>Firstname:</th><td>###value_firstname###</td>
+	</tr><tr>
+		<th>Lastname:</th><td>###value_lastname###</td>
+	</tr><tr>
+		<th>E-Mail:</th><td>###value_email###</td>
+	</tr><tr>
+		<th>Message:</th><td>###value_message###</td>
+	</tr>
+</table>
+<!-- ###TEMPLATE_EMAIL_ADMIN_HTML### end -->
+
+<!-- ###TEMPLATE_SUBMITTEDOK### begin -->
+<p>
+	Thank you for your E-Mail.<br />
+	We will respond to you as soon as possible.
+<p>
+<!-- ###TEMPLATE_SUBMITTEDOK### end -->

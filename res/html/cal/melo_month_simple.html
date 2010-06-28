@@ -1,0 +1,43 @@
+<!--month.tmpl-->
+<!--In the month view this template represents the 'header' of the large month view. Not the month itself eventhough the template is called month.tmpl-->
+<div id="month-header" class="calborder navback">
+	<div id="month-header-prevnext">
+	<!-- ###PREV_MONTHLINK### start-->
+		<!-- ###PREV_MONTHLINKTEXT### start-->
+		<img src="###IMG_PATH###/left_day.gif" alt="Previous Month" class="link-previous"/>
+		<!-- ###PREV_MONTHLINKTEXT### end-->
+	<!-- ###PREV_MONTHLINK### end-->
+    <h1>###DISPLAY_DATE###</h1>
+	<!-- ###NEXT_MONTHLINK### start-->
+		<!-- ###NEXT_MONTHLINKTEXT### start-->
+		<img src="###IMG_PATH###/right_day.gif" alt="Next Month" class="link-next"/>
+		<!-- ###NEXT_MONTHLINKTEXT### end-->
+	<!-- ###NEXT_MONTHLINK### end-->
+	</div>
+	###ADMIN_LINK###
+	<br style="clear: both;" />
+</div>
+
+	###MONTH_LARGE|+0###
+
+<!-- ###LIST### start -->
+<div id="month-footer" class="calborder">
+	<div id="month-footer-header">
+	<!-- ###PREV_MONTHLINK### start-->
+		<!-- ###PREV_MONTHLINKTEXT### start-->
+			<img src="###IMG_PATH###/left_day.gif" alt="[Previous Month]">
+		<!-- ###PREV_MONTHLINKTEXT### end-->
+	<!-- ###PREV_MONTHLINK### end-->
+	###L_THIS_MONTHS###
+	<!-- ###NEXT_MONTHLINK### start-->
+		<!-- ###NEXT_MONTHLINKTEXT### start-->
+			<img src="###IMG_PATH###/right_day.gif" alt="[Next Month]" />
+		<!-- ###NEXT_MONTHLINKTEXT### end-->
+	<!-- ###NEXT_MONTHLINK### end-->
+	</div>
+</div>
+<!-- ###LIST### end -->
+
+###ICS_LINK###
+
+<!--/month.tmpl-->

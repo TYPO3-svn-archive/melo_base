@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="company">Company</label>
+			<label index="title">Title</label>
+			<label index="firstname">Firstname</label>
+			<label index="lastname">Lastname</label>
+			<label index="street">Street</label>
+			<label index="city">City</label>
+			<label index="zip">ZIP Code</label>
+			<label index="country">Country</label>
+			<label index="delivery_company">Company</label>
+			<label index="delivery_firstname">Firstname</label>
+			<label index="delivery_lastname">Lastname</label>
+			<label index="delivery_street">Street</label>
+			<label index="delivery_city">City</label>
+			<label index="delivery_zip">ZIP Code</label>
+			<label index="delivery_country">Country</label>
+			<label index="phone">Telephone</label>
+			<label index="fax">Fax</label>
+			<label index="message">Message</label>
+			<label index="email">E-Mail</label>
+			<label index="customer">Customer ID (found on invoice)</label>
+			<label index="card_type">Type of Card</label>
+			<label index="card_owner">Card Owner</label>
+			<label index="card_number">Card number</label>
+			<label index="card_valid">Valid until</label>
+			<label index="vat">VAT Number</label>
+			<label index="options">Options</label>
+			<label index="first_issue">First Issue</label>
+			<label index="issue">Issue</label>
+			<label index="edition">Edition</label>
+			<label index="payment">Payment Type</label>
+			<label index="agree_terms"><![CDATA[Please confirm that you have read and agree to our <a href="/terms-and-conditions/">general terms and conditions</a>.]]></label>
+			<label index="agree_payment">Yes, I agree to the sum being charged to my credit card.</label>
+			<label index="agree_newsletter">Yes, in addition to my subscription I would like to receive the free VIA E-Newsletter containing the latest news and events in the world of lighting design.</label>
+			<label index="order_preorder">Preorder the next Issue</label>
+			<label index="order_preorder_description"><![CDATA[
+				<p>
+				Already looking forward to the next issue of Professional Lighting Design? 
+				<span class="placeholder"></span>
+				You can pre-order the next issue here so you can be sure that you will 
+				receive the next issue hot off the press!
+				<div class="price">€ 14,20 including post, packaging and VAT</div>
+				</p>
+			]]></label>
+			
+			<label index="order_test">Get an Test Issue for free</label>
+			<label index="order_test_description"><![CDATA[
+				<p>
+                This service is offered in cooperation with Martin Architectural, who will cover the costs of the issue for you.
+                By ordering a test issue, you are allowing the details 
+                you enter here to be passed on to Martin Architectural. 
+				<span class="placeholder"></span>
+				We ensure that your information is only given to this one contact.
+			    <div class="price">Free, sponsored by Martin Architectural</div>
+			</p>
+			]]></label>
+			
+			<label index="order_subscribe">Get a Subscription</label>
+			<label index="order_subscribe_description"><![CDATA[
+				<p>Save up to 16% and get the PLD regularily fresh off the press.
+				Professional Lighting Design offers you regular, up-to-date information, 
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quisr in voluptate nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				<span class="placeholder"></span>
+				project coverage and product news from the international world of interior and exterior illumination.
+				<span class="price">€ 71,90 including post, packaging and VAT. <br />€ 59,90 for students</span>
+				</p>
+			]]></label>
+			
+            <label index="customer_information">Customer Informations</label>
+            <label index="where_did_you_hear">Where did you hear about PLD?</label>
+			<label index="personal_information">Personal Informations</label>
+			<label index="payment_details">Payment Details</label>
+			<label index="address">Address</label>
+			<label index="delivery_address"><![CDATA[Delivery address <em>(if different from Invoice address)</em>]]></label>
+			<label index="invoice_address">Invoice address</label>
+			<label index="contact_information">Contact Information</label>
+			
+			<label index="submit">Send</label>
+			<label index="next">Next</label>
+			<label index="prev">Previous</label>
+			
+			<label index="error_firstname_required">Firstname is missing!</label>
+			<label index="error_firstname_maxLength">Firstname has to be shorter than ###value### characters!</label>
+			<label index="error_lastname_required">Lastname is missing!</label>
+			<label index="error_lastname_maxLength">Lastname has to be shorter than ###value### characters!</label>
+			<label index="error_email_required">Enter your E-mail address!</label>
+			<label index="error_email_email">E-mail address must be valid syntax!</label>
+			<label index="error_message_required">Message is missing!</label>
+			<label index="required_fields">Fields marked with * are required!</label>
+			
+			<label index="select_value">Thank you for your message.</label>
+			
+			<label index="thanks">Please select a Country</label>
+			<label index="sent">Your message was sent.</label>
+            <label index="contact">Contact</label>
+            <label index="germany">Germany</label>
+            <label index="guetersloh">Guetersloh</label>
+            <label index="other">Other</label>
+            
+		</languageKey>
+		<languageKey index="en" type="array">
+		</languageKey>
+		<languageKey index="de" type="array">
+			<label index="legend">Persoenliche Daten</label>
+            <label index="germany">Deutschland</label>
+            <label index="guetersloh">Gütersloh</label>
+            <label index="company">Firma</label>
+            <label index="title">Titel</label>
+            <label index="firstname">Vorname</label>
+            <label index="lastname">Nachname</label>
+            <label index="street">Straße</label>
+            <label index="city">Stadt</label>
+            <label index="zip">PLZ</label>
+            <label index="country">Land</label>
+            <label index="delivery_company">Firma</label>
+            <label index="delivery_firstname">Vorname</label>
+            <label index="delivery_lastname">Nachname</label>
+            <label index="delivery_street">Straße</label>
+            <label index="delivery_city">Stadt</label>
+            <label index="delivery_zip">PLZ</label>
+            <label index="delivery_country">Land</label>
+            <label index="phone">Telefon</label>
+            <label index="fax">Fax</label>
+            <label index="message">Nachricht</label>
+            <label index="email">E-Mail</label>
+            <label index="customer">Kundennummer (zu finden auf der Rechnung)</label>
+            <label index="card_type">Kartenart</label>
+            <label index="card_owner">Karteninhaber</label>
+            <label index="card_number">Kartennummer</label>
+            <label index="card_valid">Gültig bis</label>
+            <label index="vat">UsStID</label>
+            <label index="options">Optionen</label>
+            <label index="first_issue">Erste Ausgabe</label>
+            <label index="issue">Ausgabe</label>
+            <label index="edition">Edition</label>
+            <label index="payment">Bezahlart</label>
+            <label index="order">Bestellen</label>
+            <label index="subscribe">Abbonieren</label>
+            <label index="preorder">Vorbestellen</label>
+            <label index="customer_information">Kundeninformationen</label>
+            <label index="personal_information">Peröhnliche Informationen</label>
+            <label index="payment_details">Bezahlinformationen</label>
+            <label index="address">Adresse</label>
+            <label index="delivery_address"><![CDATA[Lieferadresse <em>(falls abweichend)</em>]]></label>
+            <label index="delivery_address_alt"><![CDATA[Lieferadresse]]></label>
+            <label index="invoice_address">Rechnungsadresse</label>
+            <label index="contact_information">Kontakinformationen</label>
+            <label index="contact">Kontakt</label>
+            <label index="submit">Absenden</label>
+            <label index="next">Weiter</label>
+            <label index="prev">Zurück</label>
+            <label index="error_firstname_required">Vorname fehlt!</label>
+            <label index="error_lastname_required">Lastname is missing!</label>
+            <label index="error_email_required">Geben Sie bitte ihre E-Mail an!</label>
+            <label index="error_email_email">Sie müssen eine richtige E-Mail angeben!</label>
+            <label index="error_message_required">Sie haben keine Nachricht eingegeben!</label>
+            <label index="required_fields">Mit * markierte Felder müssen ausgefüllt werden!</label>
+            <label index="error_agree_payment_required">Sie müssen der Bezahlung zustimmen</label>
+            <label index="error_agree_terms_required">Sie müssen unseren AGBs zustimmen</label>
+            <label index="select_value">Vielen Dank für ihre Nachricht.</label>
+            <label index="sent">Ihre Nachricht wurde verschickt.</label>
+            <label index="thanks_order">Vielen Dank für ihre Bestellung.</label>
+		</languageKey>
+	</data>
+</T3locallang>

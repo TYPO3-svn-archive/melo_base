@@ -1,0 +1,230 @@
+_DEFAULT:
+  init:
+    enableCHashCache: true
+    appendMissingSlash: ifNotFile
+    adminJumpToBackend: true
+    enableUrlDecodeCache: true
+    enableUrlEncodeCache: true
+    emptyUrlReturnValue: /
+    postVarSet_failureMode: ''
+    reapplyAbsRefPrefix: true
+  acceptHTMLsuffix: 1
+  pagePath:
+    type: user
+    userFunc: 'EXT:realurl/class.tx_realurl_advanced.php:&tx_realurl_advanced->main'
+    spaceCharacter: -
+    languageGetVar: L
+    segTitleFieldList: 'tx_realurl_pathsegment,alias,title'
+    expireDays: 1095
+  fileName:  
+    defaultToHTMLsuffixOnPrev: true
+    index:
+      index.html:
+        keyValues:
+          type: 0
+      print.html:
+        keyValues:
+          type: 98
+      text.html:
+        keyValues: 
+          type: 99
+      rss.xml:
+        keyValues: 
+          type: 100
+      sitemap.xml:
+        keyValues: 
+          type: 776
+      _DEFAULT:
+        keyValues: {  }
+  redirects: {  }
+  preVars:
+    -
+      GETvar: no_cache
+      valueMap:
+        nc: 1
+      noMatch: bypass
+    -
+      GETvar: type
+      valueMap:
+        validation: '3131'
+      noMatch: bypass
+    -
+      GETvar: L
+      valueMap:
+        de: '1'
+      noMatch: bypass
+  fixedPostVars: {  }
+  postVarSets:
+    _DEFAULT:
+      archive:
+        - { GETvar: 'tx_ttnews[year]' }
+        - { GETvar: 'tx_ttnews[month]' }
+        - { GETvar: 'tx_ttnews[day]', noMatch: bypass }
+        - { GETvar: 'tx_ttnews[pS]', noMatch: bypass }
+        - { GETvar: 'tx_ttnews[pL]', noMatch: bypass }
+      p:
+        - { GETvar: 'tx_ttnews[pointer]' }
+      c:
+        - { GETvar: 'tx_ttnews[cat]', lookUpTable: { table: tt_news_cat, id_field: uid, alias_field: title, addWhereClause: ' AND deleted != 1', useUniqueCache: 1, autoUpdate: 1, useUniqueCache_conf: { strtolower: 1 } } }
+      article:
+        - { GETvar: 'tx_ttnews[tt_news]', lookUpTable: { table: tt_news, id_field: uid, alias_field: 'concat(title, " ", uid)', addWhereClause: ' AND deleted != 1', useUniqueCache: 1, autoUpdate: 1, useUniqueCache_conf: { strtolower: 1, spaceCharacter: - } } }
+        - { GETvar: 'tx_ttnews[swords]' }
+      abp:
+        - { GETvar: 'tx_ttnews[backPid]' }
+      nq:
+        - { GETvar: 'news_search[search_text]' }
+      nqc:
+        - { GETvar: 'news_search[category][]' }
+      login:
+        - { GETvar: 'tx_newloginbox_pi3[showUid]' }
+      forgot-login:
+        - { GETvar: 'tx_newloginbox_pi1[forgot]' }
+      forgot:
+        - { GETvar: 'tx_felogin_pi1[forgot]' }
+      query:
+        - { GETvar: 'tx_indexedsearch[sword]' }
+        - { GETvar: 'tx_indexedsearch[ext]' }
+        - { GETvar: 'tx_indexedsearch[submit_button]' }
+        - { GETvar: 'tx_indexedsearch[_sections]' }
+        - { GETvar: 'tx_indexedsearch[pointer]' }
+        - { GETvar: 'tx_indexedsearch[extResume]' }
+        - { GETvar: 'tx_indexedsearch[type]' }
+        - { GETvar: 'tx_indexedsearch[group]' }
+        - { GETvar: 'tx_indexedsearch[_freeIndexUid]' }
+        - { GETvar: 'tx_indexedsearch[media]' }
+        - { GETvar: 'tx_indexedsearch[defOp]' }
+        - { GETvar: 'tx_indexedsearch[ang]' }
+        - { GETvar: 'tx_indexedsearch[desc]' }
+        - { GETvar: 'tx_indexedsearch[results]' }
+        - { GETvar: 'tx_indexedsearch[sections]' }
+        - { GETvar: 'tx_indexedsearch[lang]' }
+        - { GETvar: 'tx_indexedsearch[order]' }
+        - { GETvar: 'tx_indexedsearch[freeIndexUid]' }
+      srfu:
+        - { GETvar: 'tx_srfeuserregister_pi1[cmd]' }
+        - { GETvar: 'tx_srfeuserregister_pi1[pointer]' }
+        - { GETvar: 'tx_srfeuserregister_pi1[mode]' }
+        - { GETvar: 'tx_srfeuserregister_pi1[sword]' }
+        - { GETvar: 'tx_srfeuserregister_pi1[sort]' }
+      scal:
+        - { GETvar: 'tx_desimplecalendar_pi1[showUid]' }
+        - { GETvar: 'tx_desimplecalendar_pi1[form]' }
+        - { GETvar: 'tx_desimplecalendar_pi1[mode]' }
+        - { GETvar: 'tx_desimplecalendar_pi1[backPath]' }
+      calender-category:
+        - { GETvar: 'tx_advCalendar_pi1[category]' }
+      view:
+        - { GETvar: view }
+      cforum:
+        - { GETvar: cat_uid }
+        - { GETvar: conf_uid }
+        - { GETvar: thread_uid }
+        - { GETvar: page }
+        - { GETvar: flag }
+      event:
+        - { GETvar: eventid }
+      ef:
+        - { GETvar: editflag }
+      start:
+        - { GETvar: start }
+      day:
+        - { GETvar: day }
+      week:
+        - { GETvar: week }
+      month:
+        - { GETvar: month }
+      bu:
+        - { GETvar: backURL }
+      cmd:
+        - { GETvar: cmd }
+      year:
+        - { GETvar: year }
+      rdfi:
+        - { GETvar: 'tx_nrdfimport_pi1[showUid]' }
+      sponsor:
+        - { GETvar: 'tx_t3consultancies_pi1[showUid]', lookUpTable: { table: tx_t3consultancies, id_field: uid, alias_field: title, addWhereClause: ' AND deleted != 1', useUniqueCache: 1, autoUpdate: 1, useUniqueCache_conf: { strtolower: 1, spaceCharacter: - } } }
+        - { GETvar: 'tx_t3consultancies_pi1[service]' }
+        - { GETvar: 'tx_t3consultancies_pi1[pointer]' }
+      slide-show:
+        - { GETvar: 'tx_gsislideshow_pi1[total]' }
+        - { GETvar: 'tx_gsislideshow_pi1[lastUid]' }
+        - { GETvar: 'tx_gsislideshow_pi1[firstUid]' }
+        - { GETvar: 'tx_gsislideshow_pi1[current]' }
+        - { GETvar: 'tx_gsislideshow_pi1[showUid]', lookUpTable: { table: tx_gsislideshow_images, id_field: uid, alias_field: caption, addWhereClause: ' AND deleted != 1', useUniqueCache: 1, autoUpdate: 1, useUniqueCache_conf: { strtolower: 1, spaceCharacter: - } } }
+      tac:
+        - { GETvar: tac }
+      bp:
+        - { GETvar: backPID }
+      product:
+        - { GETvar: tt_products, lookUpTable: { table: tt_products, id_field: uid, alias_field: 'concat(title, " ", uid)', addWhereClause: ' AND deleted != 1', useUniqueCache: 1, autoUpdate: 1, useUniqueCache_conf: { strtolower: 1 } } }
+      gallery:
+        - { GETvar: gallery }
+      image:
+        - { GETvar: viewImage }
+      rp:
+        - { GETvar: resultPage }
+      idx:
+        - { GETvar: idx }
+      anmode:
+        - { GETvar: 'tx_piapappnote_pi1[mode]' }
+      anptr:
+        - { GETvar: 'tx_piapappnote_pi1[pointer]' }
+      anfile:
+        - { GETvar: 'tx_piapappnote_pi1[file]' }
+      anseach:
+        - { GETvar: 'tx_piapappnote_pi1[sword]' }
+      annote:
+        - { GETvar: 'tx_piapappnote_pi1[noteid]' }
+      anauth:
+        - { GETvar: 'tx_piapappnote_pi1[author]' }
+      anname:
+        - { GETvar: 'tx_piapappnote_pi1[title]' }
+      andesc:
+        - { GETvar: 'tx_piapappnote_pi1[description]' }
+      ancat:
+        - { GETvar: 'tx_piapappnote_pi1[categorylist]' }
+      anver:
+        - { GETvar: 'tx_piapappnote_pi1[versionlist]' }
+      andev:
+        - { GETvar: 'tx_piapappnote_pi1[devicelist]' }
+      galp:
+        - { GETvar: 'tx_hldamgallery_pi1[galleryPID]' }
+      galcat:
+        - { GETvar: 'tx_hldamgallery_pi1[galleryCID]' }
+      galimg:
+        - { GETvar: 'tx_hldamgallery_pi1[imgID]' }
+      faq-category:
+        - { GETvar: 'tx_irfaq_pi1[cat]', lookUpTable: { table: tx_irfaq_cat, id_field: uid, alias_field: title, addWhereClause: ' AND deleted != 1', useUniqueCache: 1, autoUpdate: 1, useUniqueCache_conf: { strtolower: 1, spaceCharacter: - } } }
+      skcomm:
+        - { GETvar: 'tx_skpagecomments_pi1[showComments]' }
+        - { GETvar: 'tx_skpagecomments_pi1[showForm]' }
+      dl-act:
+        - { GETvar: 'tx_abdownloads_pi1[action]', valueMap: { show-category: getviewcategory, propose-a-new-download: getviewaddnewdownload, open-download: getviewclickeddownload, show-details-for-download: getviewdetailsfordownload, report-broken-download: getviewreportbrokendownload, rate-download: getviewratedownload } }
+      dl-cat:
+        - { GETvar: 'tx_abdownloads_pi1[category_uid]', valueMap: { home: '0' }, lookUpTable: { table: tx_abdownloads_category, id_field: uid, alias_field: label, addWhereClause: ' AND deleted != 1', useUniqueCache: 1, autoUpdate: 1, useUniqueCache_conf: { strtolower: 1, spaceCharacter: - } } }
+      dl-file:
+        - { GETvar: 'tx_abdownloads_pi1[uid]', lookUpTable: { table: tx_abdownloads_download, id_field: uid, alias_field: label, addWhereClause: ' AND deleted != 1', useUniqueCache: 1, autoUpdate: 1, useUniqueCache_conf: { strtolower: 1, spaceCharacter: - } } }
+      dl-ptr:
+        - { GETvar: 'tx_abdownloads_pi1[pointer]' }
+      ll-act:
+        - { GETvar: 'tx_ablinklist_pi1[action]', valueMap: { show-category: getviewcategory, propose-a-new-link: getviewaddnewlink, open-link: getviewclickedlink, show-details-for-link: getviewdetailsforlink, report-broken-link: getviewreportbrokenlink, rate-link: getviewratelink } }
+      ll-cat:
+        - { GETvar: 'tx_ablinklist_pi1[category_uid]', valueMap: { home: '0' }, lookUpTable: { table: tx_ablinklist_category, id_field: uid, alias_field: label, addWhereClause: ' AND deleted != 1', useUniqueCache: 1, autoUpdate: 1, useUniqueCache_conf: { strtolower: 1, spaceCharacter: - } } }
+      ll-link:
+        - { GETvar: 'tx_ablinklist_pi1[uid]', lookUpTable: { table: tx_ablinklist_link, id_field: uid, alias_field: label, addWhereClause: ' AND deleted != 1', useUniqueCache: 1, autoUpdate: 1, useUniqueCache_conf: { strtolower: 1, spaceCharacter: - } } }
+      ll-ptr:
+        - { GETvar: 'tx_ablinklist_pi1[pointer]' }
+      cal:
+        - { GETvar: 'tx_cal_controller[view]' }
+        - { GETvar: 'tx_cal_controller[getdate]' }
+        - { GETvar: 'tx_cal_controller[lastview]' }
+        - { GETvar: 'tx_cal_controller[type]' }
+        - { GETvar: 'tx_cal_controller[category]', lookUpTable: { table: tx_cal_category, id_field: uid, alias_field: title, addWhereClause: ' AND deleted != 1', useUniqueCache: 1, autoUpdate: 1, useUniqueCache_conf: { strtolower: 1, spaceCharacter: - } } }
+        - { GETvar: 'tx_cal_controller[uid]', lookUpTable: { table: tx_cal_event, id_field: uid, alias_field: title, addWhereClause: ' AND deleted != 1', useUniqueCache: 1, autoUpdate: 1, useUniqueCache_conf: { strtolower: 1, spaceCharacter: - } } }
+      rating:
+        - { GETvar: 'tx_accessibleratings[ref]' }
+        - { GETvar: 'tx_accessibleratings[value]' }
+      jobid:
+        - { GETvar: 'tx_dmmjobcontrol_pi1[job_uid]' }
+      ch:
+        - { GETvar: cHash, noMatch: bypass }

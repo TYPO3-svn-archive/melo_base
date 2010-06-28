@@ -1,0 +1,50 @@
+/*** ESSENTIAL STYLES ***/
+.dnav, .dnav * {
+	list-style:		none;
+}
+.dnav {
+}
+.dnav ul {
+	position:		absolute;
+	top:			-999em;
+	width:			10em; /* left offset of submenus need to match (see below) */
+	z-index:100;
+}
+.dnav ul li {
+	width:			100%;
+}
+.dnav li:hover {
+	visibility:		inherit; /* fixes IE7 'sticky bug' */
+}
+.dnav li {
+	float:			left;
+	position:		relative;
+}
+.dnav a {
+	display:		block;
+	position:		relative;
+}
+.dnav li:hover ul,
+.dnav li.sfHover ul {
+	left:			0;
+	top:			1em; /* match top ul list item height */
+	z-index:		99;
+}
+ul.dnav li:hover li ul,
+ul.dnav li.sfHover li ul {
+	top:			-999em;
+}
+ul.dnav li li:hover ul,
+ul.dnav li li.sfHover ul {
+	left:			10em; /* match ul width */
+	top:			0;
+}
+ul.dnav li li:hover li ul,
+ul.dnav li li.sfHover li ul {
+	top:			-999em;
+}
+ul.dnav li li li:hover ul,
+ul.dnav li li li.sfHover ul {
+	left:			10em; /* match ul width */
+	top:			0;
+}

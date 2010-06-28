@@ -1,0 +1,1 @@
+plugin.tx_indexedsearch.searchUID = search

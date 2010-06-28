@@ -1,0 +1,96 @@
+/**/
+/* #############################
+** ######## Formulare ##########
+** #############################
+*/
+.styled-form fieldset{border:1px solid #ccc; padding:1em 1em 0.5em 1em; background:#fafafa; margin:0 0 1em 2.4em; float:left;}
+	.styled-form fieldset fieldset {border:0px; padding:0; background:none; margin:0px;}
+
+.styled-form fieldset div fieldset,
+.styled-form fieldset span fieldset{margin:4px 2em 0em 1em;float:left;}
+.styled-form fieldset span fieldset input,
+.styled-form fieldset div fieldset input{width:auto; margin:0 0.3em 4px 0; border:0;}
+.styled-form fieldset span fieldset legend{display:none}
+
+.styled-form fieldset .csc-mailform-radio label,
+.styled-form fieldset .radio label{float:none;}
+.styled-form fieldset div {clear:both;float:left; margin-bottom:0.5em;}
+.styled-form fieldset div label {width:10em; float:left; text-align:right; background:#fafafa; padding:0.2em;}
+.styled-form fieldset div label.label-left {text-align:left; margin-left:5px;}
+.styled-form fieldset div span, .styled-form fieldset div img {float:left;margin:0;}
+.styled-form fieldset div img {border:1px #ccc solid;}
+.styled-form fieldset div input {width:23em; margin-left:1em;margin-top:0.2em;border:1px solid #BBBBBB;}
+.styled-form fieldset div span {width:21em; margin-left:1em;margin-top:0.2em;border:1px solid #BBBBBB;}
+.styled-form select { width:23.2em; margin-left:1em;margin-top:0.2em;border:1px solid #BBBBBB;}
+.styled-form textarea { width:25.5em; margin-left:1em;margin-top:0.2em;border:1px solid #BBBBBB;}
+.styled-form fieldset div span.info, .styled-form fieldset div span span{margin:0;width:auto;font-size:0.8em;margin-top:0.5em;}
+.styled-form fieldset div span.info{ padding:2px;margin:0.5em 0 0em 14em;font-size:0.8em;float:left;}
+/*.styled-form fieldset div span.csc-mailform-radio{margin:0;}*/
+.styled-form fieldset div span:after {content: ".";display: block;height: 0;clear: both;visibility: hidden;}
+
+.styled-form fieldset div.double-input input, 
+.styled-form fieldset div.double-input select, 
+.styled-form fieldset div.double-input textarea {width:9.5em; float:left;}
+.styled-form fieldset div.double-input{float:left;clear:both;}
+
+.styled-form fieldset div input.checkbox,
+.styled-form fieldset div input.csc-mailform-check {width:auto; border:0; margin-top:0.2em;}
+.styled-form fieldset div.label-right{margin-left:10.4em;}
+.styled-form fieldset div.label-right label{float:none; margin-left:5px;}
+.styled-form fieldset div textarea {font-size:1em;}
+.styled-form fieldset label span {color:red;}
+.styled-form select {margin-left:1em; border:1px #ccc solid; background:#fff; color:#777;}
+/*.styled-form input.csc-mailform-submit, .styled-form input.submit,.styled-form fieldset div input.submit-style {width:auto;font-weight:bold;background:#fafafa; cursor:pointer;}
+.styled-form input.csc-mailform-submit:hover, .styled-form input.submit:hover, input.submit-style:hover {background:#f0f0f0;border:1px solid #bbb;}*/
+.styled-form input.csc-mailform-submit,.styled-form input.powermail_submit, .styled-form input.submit{margin-left:12em;width:auto;}
+
+.styled-form-small fieldset div label {width:5em;}
+.styled-form-small fieldset div input, 
+.styled-form-small select, 
+.styled-form-small textarea {width:9em;}
+.styled-form-small input.csc-mailform-submit, .styled-form-small input.submit{margin-left:6.4em;}
+
+.styled-form .tx-indexedsearch-search-submit{float:right;text-align:right;}
+
+.styled-form .powermail_mandatory{width:auto;display:inline;float:none;margin:0;}
+
+
+
+.formstyle {  }
+	.formstyle fieldset { border:1px solid #ccc; padding:1em 1em 0.5em; background:#fafafa; margin-bottom:1em; }
+		.formstyle fieldset fieldset { border:0; padding:0; }
+			.formstyle fieldset fieldset legend { padding-bottom:0.5em; display:block; }
+	.formstyle label { float:none; display:inline-block; text-align:left; vertical-align:top; margin-bottom:0.25em; }
+	.formstyle legend { font-weight:bold; font-size:0.95em;}
+	.formstyle legend em { font-weight:normal; text-decoration:none; font-style:normal;}
+	.formstyle input,
+	.formstyle select,
+	.formstyle textarea { float:none; display:inline-block; width:93%;  margin-bottom:0.7em; border:1px solid #BBBBBB;}
+	.formstyle input{height:17px;}
+	/*.formstyle select { width:101%; }*/
+	.formstyle .row { margin-bottom:5px; }
+	.formstyle .submit { width:auto; }
+	.formstyle button.special {background:none repeat scroll 0 0 transparent;border:1px solid #BBBBBB;text-align:left; padding:0.5em; cursor:pointer;margin:0.5em;}
+	
+	.formstyle input.submit,
+	.formstyle button {
+		border: 1px solid #c4c8cc;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+/*		background:white url('../img/arrow_right.png') no-repeat 98% 50%;*/
+		background:white;
+		padding:2px 5px;
+		font-size:0.98em;
+/*		padding-right:15px;*/
+		height:auto;
+	}
+	
+	.formstyle .checkbox { width:55em; }
+		.formstyle .checkbox input { width:auto; }
+		.formstyle .checkbox label { width:95%; }
+	
+	.formstyle .condensed { width:27em; }
+		.formstyle .condensed label { display:block; float:left; width:30%; text-align:right; margin-right:2%;}
+		.formstyle .condensed input,
+		.formstyle .condensed textarea { width:21em; width:67%; }
+		.formstyle .condensed select {width:21.5em; width:68%; }

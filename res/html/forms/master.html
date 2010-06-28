@@ -1,0 +1,76 @@
+<!-- ###field_input### -->
+	<label for="###fieldname###" id="###prefix###_###fieldname###">###LLL:###fieldname#########required_###fieldname######:</label>
+	<input type="text" name="###prefix###[###fieldname###]" id="###prefix###_###fieldname###" value="###value_###fieldname######"/>
+	###error_###fieldname######
+<!-- ###field_input### -->
+
+<!-- ###field_hidden### -->
+    <input type="hidden" name="###prefix###[###fieldname###]" id="###prefix###_###fieldname###" value="###value_###fieldname######"/>
+<!-- ###field_hidden### -->
+
+<!-- ###field_text### -->
+	<label for="###fieldname###">###LLL:###fieldname#########required_###fieldname######:</label>
+	<textarea  name="###prefix###[###fieldname###]" id="###fieldname###" rows="8" cols="40">###value_###fieldname######</textarea>
+	###error_###fieldname######
+<!-- ###field_text### -->
+
+<!-- ###field_selectcountries### -->
+	###error_###fieldname######
+	<label for="###fieldname###">###LLL:###fieldname#########required_###fieldname######:</label>
+	<select name="###prefix###[###fieldname###]" id="###fieldname###">
+	  ###options_countries###
+	</select>
+<!-- ###field_selectcountries### -->
+
+<!-- ###field_issue### -->
+	###error_###fieldname######
+	<label for="###fieldname###">###LLL:###fieldname#########required_###fieldname######:</label>
+	<select name="###prefix###[###fieldname###]" id="###fieldname###">
+	  ###issue_options###
+	</select>
+<!-- ###field_issue### -->
+
+<!-- ###field_testissue### -->
+    ###error_###fieldname######
+    <label for="###fieldname###">###LLL:###fieldname#########required_###fieldname######:</label>
+    <select name="###prefix###[###fieldname###]" id="###fieldname###">
+      ###testissue_options###
+    </select>
+<!-- ###field_testissue### -->
+
+<!-- ###field_language### -->
+	###error_###fieldname######
+	<label for="###fieldname###">###LLL:###fieldname#########required_###fieldname######:</label>
+	<select name="###prefix###[###fieldname###]" id="###fieldname###">
+		###language_options###
+	</select>
+<!-- ###field_language### -->
+
+<!-- ###field_checkbox### -->
+	<div class="checkbox">
+		<input type="checkbox" name="###prefix###[###fieldname###]" id="###prefix###_###fieldname###" value="1" ###checked_###fieldname######/>
+		<label for="###prefix###_###fieldname###" id="label_###fieldname###">###LLL:###fieldname######</label>
+	</div>
+	###error_###fieldname######
+<!-- ###field_checkbox### -->
+
+<!-- ###field_selectcard### -->
+	###error_###fieldname######
+	<label for="###fieldname###">###LLL:###fieldname#########required_###fieldname######:</label>
+	<select name="###prefix###[###fieldname###]" id="###fieldname###">
+		<option value="visa" ###selected_country_visa###>Visa</option>
+		<option value="mastercard" ###selected_country_mastercard###>Mastercard</option>
+		<option value="american_express" ###selected_country_american_express###>American Express</option>
+	</select>
+<!-- ###field_selectcard### -->
+
+<!-- ###field_selecthear### -->
+    ###error_###fieldname######
+    <label for="###fieldname###">&nbsp;</label>
+    <select name="###prefix###[###fieldname###]" id="###fieldname###">
+        <option value="pldc" ###selected_pldc###>PLD-C</option>
+        <option value="lightbuilding" ###selected_lightbuilding###>Light+Building</option>
+        <option value="friend" ###selected_friend###>###LLL:from_a_friend_or_colleque###</option>
+        <option value="other" ###selected_friend###>###LLL:other###</option>
+    </select>
+<!-- ###field_selecthear### -->

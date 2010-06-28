@@ -1,0 +1,10 @@
+.simple_contact {  }
+	.simple_contact fieldset { width:56em; }
+	.simple_contact label { text-align:left; margin:0 0 2px; }
+	.simple_contact input { width:100%; }
+	.simple_contact .left { float:left;width:20em; margin-left:1em;}
+	.simple_contact .right { float:right;width:34em; margin-right:1em;}
+	.simple_contact textarea { width:100%; margin-top:-1px; }
+	.simple_contact .info { margin-left:1em; }
+	.simple_contact .error { color:#AA2E2A; font-size:0.9em; font-weight:bold; }
+	
