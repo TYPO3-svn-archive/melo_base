@@ -11,19 +11,25 @@ tmp.nav.simple.1 {
         wrap = <ul class="hnav">|</ul>
 		wrap.insertData = 1
         NO {
-            wrapItemAndSub = <li class=first>|</li> |*| <li class=middle>|</li> |*| <li class=last>|</li>
+            wrapItemAndSub = <li class="first">|</li> |*| <li class="middle">|</li> |*| <li class="last">|</li>
         }
-		ACT < .NO
+
+		ACT = 1
 		ACT {
-	    	ATagParams = class="active"
+			ATagParams = class="active"
 			wrapItemAndSub = <li class="active first">|</li> |*| <li class="active">|</li> |*| <li class="active last">|</li>
 		}
-		ACT = 1
-		ACTIFSUB < .NO
+		
+		CUR = 1
+		CUR {
+			ATagParams = class="active"
+			wrapItemAndSub = <li class="active first">|</li> |*| <li class="active">|</li> |*| <li class="active last">|</li>
+		}
+		
+		ACTIFSUB = 1
 		ACTIFSUB {
 			wrapItemAndSub = <li class="expanded has-sub first">|</li> |*| <li class="expanded has-sub">|</li> |*| <li class="expanded has-sub last">|</li>
 		}
-		ACTIFSUB = 1
     }
 }
 tmp.nav.simple.2 < tmp.nav.simple.1
