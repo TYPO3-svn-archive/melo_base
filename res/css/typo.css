@@ -78,7 +78,7 @@ dl dd { margin-left: 1.618em; }
  /* Tables */
  
 table { border-collapse: collapse; font-size:0.85em; }
-th { font-weight:700;text-align:left; }
+th, thead td { font-weight:700;text-align:left; }
 tr,th,td { margin:0; padding:0.5em 1.618em 0.5em 1em; height:21px; }
 tfoot { font-style: italic; }
 caption { text-align:center; font-family:Georgia, serif; }

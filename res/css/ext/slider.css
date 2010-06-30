@@ -98,8 +98,9 @@
     */
     text-align:center;
     width:100%;
-    height:15px;
-    padding:5px 0;
+    height:12px;
+    padding:5px 0 0;
+    overflow:hidden;
 }
 .nivo-controlNav a.nivo-control{
     text-indent:-9999em;

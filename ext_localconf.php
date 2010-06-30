@@ -67,4 +67,10 @@ $TYPO3_CONF_VARS['FE']['pageNotFound_handling'] = 'USER_FUNCTION:EXT:melo_base/c
 include_once(t3lib_extMgm::extPath("melo_base")."class.user_match.php");
 
 #$TYPO3_CONF_VARS[TYPO3_MODE]['XCLASS']['ext/templavoila/mod1/index.php'] = t3lib_extMgm::extPath("melo_base")."class.ux_tx_templavoila_module1.php";
+$TYPO3_CONF_VARS['EXTCONF']['templavoila']['mod1']['renderPreviewContentClass'][] = 'EXT:melo_base/class.tx_melo_base_preview.php:&tx_melo_base_preview';
 $TYPO3_CONF_VARS[TYPO3_MODE]['XCLASS']['ext/rgslideshow/pi1/class.tx_rgslideshow_pi1.php'] = t3lib_extMgm::extPath("melo_base")."class.ux_tx_rgslideshow_pi1.php";
+
+if (t3lib_extMgm::isLoaded('templavoila'))    {
+    require_once (t3lib_extMgm::extPath($_EXTKEY).'class.tx_melobase_sidebar.php');
+    tx_melobase_sidebar::init();
+}

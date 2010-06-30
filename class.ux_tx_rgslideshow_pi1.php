@@ -91,5 +91,10 @@ class ux_tx_rgslideshow_pi1 extends tx_rgslideshow_pi1 {
 
         return $content;
 	}
+
+
+    function loadJS($conf) {
+        return "";
+    }
 }
 ?>

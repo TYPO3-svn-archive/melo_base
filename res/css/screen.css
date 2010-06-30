@@ -129,12 +129,12 @@ div .fluid{ padding:0; }
 		border: 1px solid #c4c8cc;
 		-moz-border-radius: 5px;
 		-webkit-border-radius: 5px;
-		background:white url('../img/arrow_right.png') no-repeat 98% 50%;
+		background:white no-repeat 98% 50%;
 		padding:2px 5px;
 		font-size:0.98em;
 	}
 	.feature a:hover{text-decoration:none;}
-
+    .feature_address { margin-right:1em; }
 .image-wrap {
     min-width:200px;
     min-height:100px;
