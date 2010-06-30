@@ -58,30 +58,12 @@ TCEFORM{
 		tx_realurl_pathsegment.disabled = 1
 	}
 	tt_content {
-	    # jfmulticontent
-#       jfmulticontent_column1.disabled = 1
-#       jfmulticontent_column2.disabled = 1
-#       jfmulticontent_column3.disabled = 1
-#       jfmulticontent_column4.disabled = 1
-        jfmulticontent_attributes.disabled = 1
-        jfmulticontent_tabCollapsible.disabled = 1
-        jfmulticontent_tabRandomContent.disabled = 1
-        jfmulticontent_tabOpen.disabled = 1
-        jfmulticontent_tabFxHeight.disabled = 1
-        jfmulticontent_tabFxOpacity.disabled = 1
-        jfmulticontent_tabFxDuration.disabled = 1
-        jfmulticontent_accordionAutoHeight.disabled = 1
-        jfmulticontent_accordionCollapsible.disabled = 1
-        jfmulticontent_accordionClosed.disabled = 1
-        jfmulticontent_accordionOpen.disabled = 1
-        jfmulticontent_accordionEvent.disabled = 1
-        jfmulticontent_accordionAnimated.disabled = 1
-        jfmulticontent_accordionTransition.disabled = 1
-        jfmulticontent_accordionTransitiondir.disabled = 1
-        jfmulticontent_delayDuration.disabled = 1
-        jfmulticontent_autoplayContinuing.disabled = 1
-        jfmulticontent_accordionRandomContent.disabled = 1
-        jfmulticontent_accordionTransitionduration.disabled = 1
+	}
+	tt_address {
+        middle_name.disabled = 1
+        building.disabled = 1
+        room.disabled = 1
+        name.disabled = 1
 	}
 }
 
