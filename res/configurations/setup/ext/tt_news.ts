@@ -78,12 +78,14 @@ plugin.tt_news._LOCAL_LANG{
         more = Read More ...
         catmenuHeader =
         pi_flexform.LIST2 = test
+        preAuthor = By:&nbsp;
     }
     de {
         pi_list_browseresults_displays = News ###SPAN_BEGIN###%s bis %s von %s</span>
         more = Weiterlesen ...
         catmenuHeader =
         pi_flexform.LIST2 = test
+        preAuthor = Von:&nbsp;
     }
 }
 

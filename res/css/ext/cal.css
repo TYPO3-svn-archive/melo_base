@@ -27,3 +27,4 @@
             .month-large td { background: white; }
             .month-large tr { border:none; }
             .month-large th { padding-left:0; }
+#right .tx-cal-controller .pagebrowser { display:none; }

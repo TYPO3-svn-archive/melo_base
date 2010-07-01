@@ -137,7 +137,8 @@ div .fluid{ padding:0; }
     .feature_address { margin-right:1em; }
 .image-wrap {
     min-width:200px;
-    min-height:100px;
+    min-height:125px;
     text-align: center;
     vertical-align:middle;
+    background:none;
 }

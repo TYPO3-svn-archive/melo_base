@@ -14,6 +14,13 @@ class ux_tx_templavoila_pi1 extends tx_templavoila_pi1
 	function initVars($conf)	{
 		$this->inheritValueFromDefault = $conf['dontInheritValueFromDefault'] ? 0 : 1;
 		$this->conf=$conf;
+
+        #$rows = $GLOBALS["TYPO3_DB"]->exec_SELECTgetRows("*", "tt_address","1=1");
+		#foreach ($rows as $row) {
+        #    foreach($row as $key => $value)
+        #        $row[$key] = utf8_encode($value);
+		#	$GLOBALS['TYPO3_DB']->exec_UPDATEquery('tt_address', 'uid='.intval($row["uid"]), $row);
+		#}
 		
 		$rows = $GLOBALS["TYPO3_DB"]->exec_SELECTgetRows("*", "tx_templavoila_tmplobj","1=1");
 		foreach ($rows as $row) {

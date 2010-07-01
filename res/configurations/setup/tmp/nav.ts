@@ -87,6 +87,7 @@ tmp.nav.navbar {
 
 tmp.nav.sitemap < tmp.nav.dropdown.1
 tmp.nav.sitemap {
+    excludeUidList = 216
 	entryLevel = 0
 	1{
 		expAll = 1
