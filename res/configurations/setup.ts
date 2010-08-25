@@ -72,6 +72,7 @@ page {
         ext_slider = typo3conf/ext/melo_base/res/css/ext/slider.css
 		ext_indexed_search = typo3conf/ext/melo_base/res/css/ext/indexed_search.css
 		ext_cal = typo3conf/ext/melo_base/res/css/ext/cal.css
+		ext_sb_portfolio = typo3conf/ext/melo_base/res/css/ext/sb_portfolio.css
         ext_tt_news = typo3conf/ext/melo_base/res/css/ext/tt_news.css
         ext_jfmulticontent = typo3conf/ext/melo_base/res/css/ext/jfmulticontent.css
 #		typo3conf/ext/melo_base/res/css/print.css
@@ -90,6 +91,8 @@ tt_content.image.20.maxW = 960
 <INCLUDE_TYPOSCRIPT: source="FILE:typo3conf/ext/melo_base/res/configurations/setup/lang.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE:typo3conf/ext/melo_base/res/configurations/setup/tmp/misc.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE:typo3conf/ext/melo_base/res/configurations/setup/tmp/nav.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE:typo3conf/ext/melo_base/res/configurations/setup/ext/sb_portfolio.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE:typo3conf/ext/melo_base/res/configurations/setup/ext/jp_pageteaser.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE:typo3conf/ext/melo_base/res/configurations/setup/ext/cal.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE:typo3conf/ext/melo_base/res/configurations/setup/ext/indexed_search.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE:typo3conf/ext/melo_base/res/configurations/setup/ext/jq_fancybox.ts">

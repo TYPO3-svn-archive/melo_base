@@ -71,6 +71,17 @@ page.headerData.500 {
 	wrap = <link rel="alternate" type="application/rss+xml" title="RSS-Feed" href="|" />
 }
 
+tmp.rss = TEXT
+tmp.rss {
+	typolink{
+		#uid der Seite, die als RSS-Feed funktionieren soll.
+		parameter = {page:uid},100
+		parameter.stdWrap.insertData = 1
+		ATagParams = class=rss
+	}
+	value = RSS
+}
+
 plugin.tt_news._LOCAL_LANG{
     default {
         pi_list_browseresults_displays = Displaying ###FROM### to ###TO### of ###OUT_OF###

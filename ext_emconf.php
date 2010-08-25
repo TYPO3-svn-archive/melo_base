@@ -32,7 +32,8 @@ $EM_CONF[$_EXTKEY] = array(
 	'version' => '0.0.0',
 	'constraints' => array(
 		'depends' => array(
-			'pagenotfound_handler' => ''
+			'pagenotfound_handler' => '',
+			'realurl_yaml' => ''
 		),
 		'conflicts' => array(
 		),

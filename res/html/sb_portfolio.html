@@ -1,0 +1,258 @@
+<html>
+	<head>
+		<title>SB Portfolio Default Template</title>
+	</head>
+	
+	<body>
+        ###TEMPLATE_LIST###
+        <div class="portfolioList">
+        	###FILTER###
+        	###CONTENT###
+        		###ITEM###
+        		<div class="portfolioItem###POSITION### dl">
+        			###TITLE###
+        			###IMAGE###
+        		</div>
+        		###ITEM###
+        	###CONTENT###
+        </div>
+        ###PAGE_BROWSER###
+        ###TEMPLATE_LIST###
+        
+        
+        
+        ###TEMPLATE_GRID###
+        <div class="portfolioGrid">
+        	###FILTER###
+        	<table class="grid">
+        		<tbody>
+        			<tr>
+        			###CONTENT###
+        			###ITEM###
+        				<td class="gridItem realGridItem###POSITION###">
+        					###L_TITLE###
+        					###L_IMAGE###
+        					###L_CATEGORY###
+        				</td>
+        			###ITEM###
+        			###ITEM_IMAGEGRID###
+        				<td class="gridItem realGridItem###POSITION###">
+        					###IMAGE###
+        				</td>
+        			###ITEM_IMAGEGRID###
+        			###ITEM_DUMMY###
+        				<td class="gridItem dummyGridItem###POSITION###">
+        				</td>
+        			###ITEM_DUMMY###
+			        ###GRID_ROW###
+        			</tr>
+        			<tr>
+			        ###GRID_ROW###
+        			###CONTENT###
+        			</tr>
+        		</tbody>
+        	</table>
+        	###PAGE_BROWSER###
+        	###IMAGE_JS###
+        </div>
+        ###TEMPLATE_GRID###
+        
+        
+        
+        ###TEMPLATE_SINGLE###
+        <div class="portfolioSingle">
+        		###L_UID###
+        		###L_TITLE###
+        		###L_DATE###
+        		###L_FULLDESCRIPTION###
+        		###L_SUMMARY###
+        		###L_CLIENT###
+        		###L_LINKURL###
+        		###L_IMAGE###
+        		###IMAGE_JS###
+        		###L_IMAGE_GRID###
+        		###L_CATEGORY###
+        		###L_TAGS### 
+        		###NEXT###
+        		###PREV###
+        		###ENLARGE###
+        		---
+        		###L_RELATEDITEMS###
+        		---
+        		###L_RELATEDNEWS###
+        </div>
+        ###TEMPLATE_SINGLE###
+        
+        
+        
+        ###TEMPLATE_CATEGORYBROWSER###
+        <ol class="portfolioCats">
+        	###CONTENT###
+        	###ITEM###
+        	<li class="portfolioCat cat###UID_R######SELECTED######POSITION###">###TITLE###</li>
+        	###ITEM###
+        	###CONTENT###
+        </ol>
+        ###TEMPLATE_CATEGORYBROWSER###
+        
+        
+        
+        ###TEMPLATE_CATEGORYSINGLE###
+        <div class="portfolioCategorySingle cat###UID_R###">
+        	###L_UID###
+        	###L_TITLE###
+        	###DESCRIPTION###
+        </div>
+        ###TEMPLATE_CATEGORYSINGLE###
+        
+        
+        
+        ###TEMPLATE_CLIENTSINGLE###
+        <div class="portfolioClientSingle">
+        		###L_UID###
+        		###L_TITLE###
+        		###L_DESCRIPTION###
+        		###L_URL###
+        		###L_IMAGE### 
+        		###NEXT###
+        		###PREV###
+        		###MINI_LIST###
+        		###IMAGE_JS###
+        </div>
+        ###TEMPLATE_CLIENTSINGLE###
+        
+        
+        
+        ###TEMPLATE_CLIENTLIST###
+        <ul class="portfolioClientList">
+        	###CONTENT###
+        	###ITEM###
+        	<li class="portfolioClient###POSITION###">
+        		###L_UID###
+        		###L_TITLE###
+        		###L_DESCRIPTION###
+        		###L_URL###
+        		###L_IMAGE###
+        	</li>
+        	###ITEM###
+        	###CONTENT###
+        </ul>
+        ###PAGE_BROWSER###
+        ###IMAGE_JS###
+        ###TEMPLATE_CLIENTLIST###
+        
+        
+        
+        ###TEMPLATE_CLIENTGRID###
+        <div class="portfolioClientGrid">
+        	<table class="grid">
+        		<tbody>
+        			<tr>
+        			###CONTENT###
+        			###ITEM###
+        				<td class="gridItem realGridItem###POSITION###">
+        					###L_TITLE###
+        					###L_IMAGE###
+        					###L_URL###
+        					###L_DESCRIPTION###
+        				</td>
+        			###ITEM###
+        			###ITEM_DUMMY###
+        				<td class="gridItem dummyGridItem###POSITION###">
+        				</td>
+        			###ITEM_DUMMY###
+			        ###GRID_ROW###
+        			</tr>
+        			<tr>
+			        ###GRID_ROW###
+        			###CONTENT###
+        			</tr>
+        		</tbody>
+        	</table>
+        	###PAGE_BROWSER###
+        </div>
+        ###TEMPLATE_CLIENTGRID###
+        
+        
+        
+        ###TEMPLATE_JAVASCRIPT###
+        <script class="portfolioImageJs" type="text/javascript">
+###JS_CONTENT###
+        </script>
+        ###TEMPLATE_JAVASCRIPT###
+        
+        
+        
+        ###TEMPLATE_RELATEDITEMS###
+        <ul class="portfolioRelatedItems">
+        	###CONTENT###
+        	###ITEM###
+        	<li class="portfolioRelatedItem###POSITION###">
+        		###TITLE###
+        		###DATE###
+        	</li>
+        	###ITEM###
+        	###CONTENT###
+        </ul>
+        ###TEMPLATE_RELATEDITEMS###
+        
+        
+        
+        ###TEMPLATE_RELATEDNEWS###
+        <ul class="portfolioRelatedNews">
+        	###CONTENT###
+        	###ITEM###
+        	<li class="portfolioRelatedNewsItem###POSITION###">
+        		###TITLE###
+        		###DATE###
+        	</li>
+        	###ITEM###
+        	###CONTENT###
+        </ul>
+        ###TEMPLATE_RELATEDNEWS###
+        
+        
+        
+        ###TEMPLATE_CAROUSEL###
+        ###CAROUSEL_TITLE###
+        <ul id="portfolioCarousel" class="jcarousel-skin-tango">
+        	###CONTENT###
+        	###ITEM###
+        	<li class="portfolioCarouselItem###POSITION###">
+        		###IMAGE###
+        	</li>
+        	###ITEM###
+        	###ITEM_IMAGEGRID###
+        	<li class="portfolioCarouselItem###POSITION###">
+        		###IMAGE###
+        	</li>
+        	###ITEM_IMAGEGRID###
+        	###CONTENT###
+		</ul>
+        ###TEMPLATE_CAROUSEL###
+        
+        
+        
+        ###TEMPLATE_TABS###
+        ###TABS_TITLE###
+		<div id="portfolioTabs">
+		    <ul>
+        		###CONTENT_TAB###
+        		###ITEM_TAB###
+		        <li class="portfolioTabTitle###POSITION###"><a href="#portfolioTabItem-###COUNT###">###TAB_TITLE_COUNT###</a></li>
+        		###ITEM_TAB###
+        		###CONTENT_TAB###
+		    </ul>
+        	###CONTENT###
+        	###ITEM###
+		    <div id="portfolioTabItem-###COUNT###" class="portfolioTabContent###POSITION###">
+		    	###IMAGE###
+		    	###TITLE###
+		    	###SUMMARY###
+		    </div>
+        	###ITEM###
+        	###CONTENT###
+		</div>
+        ###TEMPLATE_TABS###
+	</body>
+</html>

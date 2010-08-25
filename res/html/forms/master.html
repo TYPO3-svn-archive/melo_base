@@ -2,6 +2,12 @@
 	<label for="###fieldname###" id="###prefix###_###fieldname###">###LLL:###fieldname#########required_###fieldname######:</label>
 	<input type="text" name="###prefix###[###fieldname###]" id="###prefix###_###fieldname###" value="###value_###fieldname######"/>
 	###error_###fieldname######
+	###error_###fieldname######
+	<label for="###fieldname###">###LLL:###fieldname#########required_###fieldname######:</label>
+	<select name="###prefix###[###fieldname###]" id="###fieldname###">
+		<option value="yes" ###selected_###fieldname##_yes###>###LLL:yes###</option>
+		<option value="no" ###selected_###fieldname##_no###>###LLL:yes###</option>
+	</select>
 <!-- ###field_input### -->
 
 <!-- ###field_hidden### -->
@@ -74,3 +80,12 @@
         <option value="other" ###selected_friend###>###LLL:other###</option>
     </select>
 <!-- ###field_selecthear### -->
+
+<!-- ###field_boolean### -->
+	###error_###fieldname######
+	<label for="###fieldname###">###LLL:###fieldname#########required_###fieldname######:</label>
+	<select name="###prefix###[###fieldname###]" id="###fieldname###">
+		<option value="yes" ###selected_###fieldname##_yes###>###LLL:yes###</option>
+		<option value="no" ###selected_###fieldname##_no###>###LLL:yes###</option>
+	</select>
+<!-- ###field_boolean### -->

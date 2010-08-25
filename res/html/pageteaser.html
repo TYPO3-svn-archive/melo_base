@@ -1,24 +1,33 @@
-<html>
-<head>
-<title>templatefile for Universal Pageteaser</title>
-<!-- ###HEADER_ADDITIONS### begin -->
-<link rel="stylesheet" type="text/css" href="###SITE_REL_PATH###res/pageteaser.css" />
-<!-- ###HEADER_ADDITIONS### end -->
-</head>
-<body>
-<!-- ###MAIN### begin -->
-<div class="main ###oddeven###">
-###IMAGE###
-<h3>###TITLE###</h3>
-<h4>###SUBTITLE###</h4>
-<p>###ABSTRACT###</p>###MORELINK###
-
-###NAVTITLE###<br />
-erzeugt am: ###CRDATE###<br />
-###AGE###<br />
-aktualisiert am: ###TSTAMP###<br />
-###KEYWORDS###<br />
-</div> 
-<!-- ###MAIN### end -->
-</body>
-</html>
+<titles>
+	<default>1 Column - Image left - Text right</default>
+	<de>1 Spalte - Bild links - Text rechts</de>
+</titles>
+<!-- 
+	###TITLE###					- Contains the title for the page
+	###DESCRIPTION###			- Contains the short description text
+	###IMAGE###					- Contains the image
+	###CREATION_DATE###			- Date when the page was created
+	###CHANGE_DATE###			- Date when the page was edited
+	###LINK_ITEM###				- Links to the page with a predefined label
+	###LINK_ITEM_WRAP###		- Generates a link to the page around something
+	###PAGEBROWSER###			- Shows the pagebrowser
+	###ADDITIONAL_CLASSES###	- Contains additional classes like first, last, odd and even
+ -->
+<!-- ###LIST_VIEW### begin -->
+    <div class="tx-jppageteaser-pi1-list">
+	    <!-- ###LIST_VIEW_ENTRY### begin -->   
+	       <div class="tx-jppageteaser-pi1-list-entry###ADDITIONAL_CLASSES###">
+	           <h4><!-- ###LINK_ITEM_WRAP### begin -->###TITLE###<!-- ###LINK_ITEM_WRAP### end --></h4>
+	           <div class="tx-jppageteaser-pi1-list-entry-image">
+	               <!-- ###LINK_ITEM_WRAP### begin -->###IMAGE###<!-- ###LINK_ITEM_WRAP### end -->
+	           </div>
+		       <div class="tx-jppageteaser-pi1-list-entry-description">
+		           ###DESCRIPTION###
+		       </div>
+		       <div class="tx-jppageteaser-pi1-list-entry-link-item">###LINK_ITEM###</div>
+		       <div class="tx-jppageteaser-pi1-list-floatcleaner">&nbsp;</div>
+	       </div>
+	    <!-- ###LIST_VIEW_ENTRY### end --> 
+	    ###PAGEBROWSER###
+	</div>
+<!-- ###LIST_VIEW### end -->

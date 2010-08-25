@@ -2,6 +2,8 @@
 <T3locallang>
 	<data type="array">
 		<languageKey index="default" type="array">
+			<label index="yes">yes</label>
+			<label index="no">no</label>
 			<label index="company">Company</label>
 			<label index="title">Title</label>
 			<label index="firstname">Firstname</label>
@@ -164,6 +166,8 @@
             <label index="select_value">Vielen Dank für ihre Nachricht.</label>
             <label index="sent">Ihre Nachricht wurde verschickt.</label>
             <label index="thanks_order">Vielen Dank für ihre Bestellung.</label>
+			<label index="yes">Ja</label>
+			<label index="no">Nein</label>
 		</languageKey>
 	</data>
 </T3locallang>

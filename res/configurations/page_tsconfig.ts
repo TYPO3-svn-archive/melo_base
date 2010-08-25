@@ -189,3 +189,5 @@ RTE.default.proc {
 		span, strong, sub, sup, table, tbody, td, th, tr, tt, ul, small
 	)
 }
+
+plugin.Tx_Formhandler.properties.flexformFile = FILE:EXT:melo_base/res/xml/flexforms/registration.xml'

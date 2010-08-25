@@ -26,7 +26,9 @@ $path_site = dirname(__FILE__)."/../";
 
 // Include base Configuration
 $base = $path_site."typo3conf/ext/melo_base/res/configurations/realurlconf.yaml";
-$TYPO3_CONF_VARS['EXTCONF']['realurl'] = array_merge_recursive($TYPO3_CONF_VARS['EXTCONF']['realurl'],sfYaml::load($base));
+$baseConf = sfYaml::load($base);
+
+$TYPO3_CONF_VARS['EXTCONF']['realurl'] = array_merge_recursive($TYPO3_CONF_VARS['EXTCONF']['realurl'],$baseConf);
 
 // Include Project Configurations
 $configurations = glob($path_site."/fileadmin/*/configurations/realurlconf.yaml");
